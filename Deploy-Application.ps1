@@ -182,7 +182,7 @@ Try {
         [String]$installPhase = 'Pre-Installation'
 
         ## Show Welcome Message, close Internet Explorer if required, allow up to 3 deferrals, verify there is enough disk space to complete the install, and persist the prompt
-        Show-InstallationWelcome -CloseApps 'Chrome' -CloseAppsCountdown 150 -MinimizeWindows $False -TopMost $true
+        Show-InstallationWelcome -CloseApps 'Chrome' -CloseAppsCountdown 1800 -MinimizeWindows $False -TopMost $true
 
         ## Show Progress Message (with the default message)
         #Show-InstallationProgress
