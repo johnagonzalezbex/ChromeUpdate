@@ -237,11 +237,6 @@ Try {
         $vbsDummyScript | Out-File -FilePath $dummyScriptPath -Force
         $wscriptPath = Join-Path $env:SystemRoot -ChildPath "System32\wscript.exe"
         ###########################################################################################
-        #$trigger = New-ScheduledTaskTrigger -AtLogOn
-        $class = Get-cimclass MSFT_TaskEventTrigger root/Microsoft/Windows/TaskScheduler
-        $trigger2 = $class | New-CimInstance -ClientOnly
-        $trigger2.Enabled = $True
-        $trigger2.Subscription = '<QueryList><Query Id="0" Path="Microsoft-Windows-NetworkProfile/Operational"><Select Path="Microsoft-Windows-NetworkProfile/Operational">*[System[Provider[@Name=''Microsoft-Windows-NetworkProfile''] and EventID=10000]]</Select></Query></QueryList>'
         #Execute task in users context
         $principal = New-ScheduledTaskPrincipal -GroupId "S-1-5-32-545" -Id "Author"
         #call the vbscript helper and pass the PosH script as argument
