@@ -289,7 +289,7 @@ $AttributionText = "Message From Bexar County"
 $HeaderText = "Don't Forget! You can restore your tabs!"
 $TitleText = "Update Completed"
 $BodyText1 = "If Chrome has restarted, you are likely to be given the option to click 'Restore' to open your last session and tabs."
-$BodyText2 = "Thank you for your assisance in ensuring our compliance."
+$BodyText2 = "Thank you for your assistance in ensuring our compliance."
 
 
 # Check for required entries in registry for when using Powershell as application for the toast
