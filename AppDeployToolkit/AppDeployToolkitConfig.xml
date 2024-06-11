@@ -146,7 +146,7 @@
         <!-- Text displayed on the defer button when prompting to close running programs. -->
         <ClosePrompt_Message>The following browsers must be closed in order to complete the update. Expected Duration: 1min
 
-Please save your work and click "Restart Chrome Now" at your earliest convenience.</ClosePrompt_Message>
+You will be given the option to restore your tabs once complete. Please save your work and click "Restart Chrome Now" at your earliest convenience.</ClosePrompt_Message>
         <!-- Text displayed when prompting to close running programs. -->
         <ClosePrompt_CountdownMessage>The SAP application will automatically be closed in:</ClosePrompt_CountdownMessage>
         <!-- Text displayed when counting down to automatically closing applications. -->
